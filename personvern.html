@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personvern – PassVakten</title>
+  <meta name="description" content="Personvernerklæring for PassVakten. Les om hvordan vi behandler personopplysninger i appen." />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="PassVakten hjem">
+        <img src="logo.svg" alt="PassVakten logo" width="36" height="36" />
+        <span class="nav-logo-name">PassVakten</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#slik-fungerer-det">Slik fungerer det</a></li>
+        <li><a href="index.html#funksjoner">Funksjoner</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#last-ned" class="btn-nav">Last ned</a></li>
+      </ul>
+
+      <button class="nav-hamburger" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="privacy-hero">
+      <div class="container">
+        <span class="section-label">Personvernerklæring</span>
+        <h1>Personvern i PassVakten</h1>
+        <p>Sist oppdatert: 23. april 2026</p>
+      </div>
+    </section>
+
+    <!-- Privacy content -->
+    <section class="section" aria-labelledby="privacy-content-heading">
+      <div class="container privacy-content">
+
+        <h2 id="privacy-content-heading">1. Behandlingsansvarlig</h2>
+        <p>
+          Behandlingsansvarlig for personopplysninger i PassVakten er:
+        </p>
+        <p>
+          <strong>Flatline AS</strong><br/>
+          Org.&nbsp;nr.: 937&nbsp;347&nbsp;804<br/>
+          E-post: <a href="mailto:kontakt@flatline.no" style="color: var(--coral);">kontakt@flatline.no</a>
+        </p>
+        <p>
+          Ta gjerne kontakt med oss dersom du har spørsmål om personvern eller ønsker å utøve rettighetene dine.
+        </p>
+
+        <h2>2. Hvilke opplysninger samles inn</h2>
+        <p>
+          PassVakten er designet for å samle inn så lite personopplysninger som mulig. Vi samler inn følgende:
+        </p>
+        <ul>
+          <li>
+            <strong>Push-token (APNs-token):</strong> For å kunne sende deg push-varsler når det dukker opp
+            ledige passtimer, registrerer appen din enhets push-token hos Apple Push Notification service (APNs).
+            Tokenet er et tilfeldig generert ID-nummer knyttet til din enhet og installasjon av appen – det
+            inneholder ingen personlig identifiserbar informasjon som navn, e-post eller telefonnummer.
+          </li>
+          <li>
+            <strong>Valgte stasjoner:</strong> Dine valg av politistasjoner du vil overvåke lagres lokalt
+            på din enhet via AppStorage/UserDefaults. Disse opplysningene forlater ikke enheten din,
+            med unntak av at de brukes til å filtrere hvilke varsler du skal motta.
+          </li>
+          <li>
+            <strong>Ingen konto:</strong> PassVakten krever ikke at du oppretter en konto.
+            Vi samler ikke inn navn, e-postadresse, telefonnummer eller andre tradisjonelle
+            personopplysninger.
+          </li>
+        </ul>
+
+        <h2>3. Formål og rettslig grunnlag</h2>
+        <p>
+          Vi behandler push-tokenet ditt utelukkende for å levere den tjenesten du har bedt om:
+          å bli varslet når det dukker opp ledige passtimer hos politiet.
+        </p>
+        <p>
+          Rettslig grunnlag for behandlingen er <strong>avtale</strong>
+          (GDPR art.&nbsp;6 nr.&nbsp;1 bokstav b) – behandlingen er nødvendig for å oppfylle
+          den tjenesteavtalen du inngår når du laster ned og tar appen i bruk.
+        </p>
+        <p>
+          Dersom appen på et tidspunkt tilbyr valgfrie tilleggstjenester som krever ytterligere
+          behandling, vil vi innhente ditt samtykke (GDPR art.&nbsp;6 nr.&nbsp;1 bokstav a)
+          før slik behandling finner sted.
+        </p>
+
+        <h2>4. Lagring og sletting</h2>
+        <p>
+          Push-tokenet ditt lagres kun så lenge du har appen installert og push-varsler aktivert.
+          Dersom du avinstallerer appen eller trekker tilbake tillatelse til push-varsler, slettes
+          tokenet fra våre systemer så snart Apple invaliderer det – normalt innen kort tid.
+        </p>
+        <p>
+          Du kan når som helst deaktivere push-varsler i iPhone-innstillingene under
+          <em>Innstillinger → PassVakten → Varslinger</em>.
+        </p>
+        <p>
+          Valgte stasjoner er utelukkende lagret lokalt på din enhet og slettes automatisk
+          ved avinstallering av appen.
+        </p>
+
+        <h2>5. Deling med tredjeparter</h2>
+        <p>
+          Vi selger ikke og deler ikke personopplysninger med tredjeparter for kommersielle formål.
+        </p>
+        <p>
+          For å levere push-varsler benytter vi <strong>Apple Push Notification service (APNs)</strong>,
+          som er en tjeneste levert av Apple&nbsp;Inc. Push-tokenet ditt overføres til APNs som en
+          nødvendig del av varslingstjenesten. Apple behandler tokenet i samsvar med sine egne
+          retningslinjer for personvern, som er tilgjengelig på
+          <a href="https://www.apple.com/no/privacy/" target="_blank" rel="noopener noreferrer"
+             style="color: var(--coral);">apple.com/no/privacy</a>.
+        </p>
+        <p>
+          Vi benytter ingen tredjepartsanalyse, annonsenett eller sporingsteknologi i appen.
+        </p>
+
+        <h2>6. Dine rettigheter</h2>
+        <p>
+          Som registrert har du etter GDPR følgende rettigheter:
+        </p>
+        <ul>
+          <li><strong>Rett til innsyn</strong> – du kan be om en kopi av de opplysningene vi har om deg.</li>
+          <li><strong>Rett til retting</strong> – du kan be om at uriktige opplysninger rettes.</li>
+          <li><strong>Rett til sletting</strong> – du kan be om at opplysninger om deg slettes («retten til å bli glemt»).</li>
+          <li><strong>Rett til begrensning</strong> – du kan be om at behandlingen av dine opplysninger begrenses.</li>
+          <li><strong>Rett til dataportabilitet</strong> – du kan be om å få dine opplysninger utlevert i et maskinlesbart format.</li>
+          <li><strong>Rett til å protestere</strong> – du kan protestere mot behandling basert på berettiget interesse.</li>
+        </ul>
+        <p>
+          For å utøve rettighetene dine, ta kontakt med oss på
+          <a href="mailto:kontakt@flatline.no" style="color: var(--coral);">kontakt@flatline.no</a>.
+          Vi vil besvare henvendelsen din innen 30 dager.
+        </p>
+
+        <h2>7. Klagerett</h2>
+        <p>
+          Dersom du mener at vår behandling av personopplysninger er i strid med GDPR eller
+          personopplysningsloven, har du rett til å klage til tilsynsmyndigheten:
+        </p>
+        <p>
+          <strong>Datatilsynet</strong><br/>
+          Postboks 458 Sentrum, 0105 Oslo<br/>
+          Telefon: +47 22 39 69 00<br/>
+          <a href="https://www.datatilsynet.no" target="_blank" rel="noopener noreferrer"
+             style="color: var(--coral);">datatilsynet.no</a>
+        </p>
+
+        <h2>8. Kontakt</h2>
+        <p>
+          Har du spørsmål om denne personvernerklæringen eller om vår behandling av
+          personopplysninger, ta gjerne kontakt:
+        </p>
+        <p>
+          <strong>Flatline AS</strong><br/>
+          E-post: <a href="mailto:kontakt@flatline.no" style="color: var(--coral);">kontakt@flatline.no</a>
+        </p>
+        <p>
+          Vi forbeholder oss retten til å oppdatere denne erklæringen. Vesentlige endringer
+          vil varsles gjennom appen. Dato for siste oppdatering fremgår øverst på denne siden.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>PassVakten</strong><br/>
+        © 2025 PassVakten &nbsp;·&nbsp; En app fra Flatline AS<br/>
+        <span style="font-size:.75rem; color: rgba(255,255,255,.4);">
+          Bygget: <span class="build-stamp" style="color: #aaa; font-family: monospace;">2026-04-23 00:53</span>
+        </span>
+      </div>
+      <div class="footer-right">
+        <a href="personvern.html">Personvern</a>
+        <a href="mailto:kontakt@flatline.no">kontakt@flatline.no</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

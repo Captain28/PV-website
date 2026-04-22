@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PassVakten – Få time til pass uten å slite</title>
+  <meta name="description" content="PassVakten overvåker ledige passtimer hos politiet og varsler deg øyeblikkelig når noe dukker opp. Gratis iOS-app." />
+  <meta property="og:title" content="PassVakten – Få time til pass uten å slite" />
+  <meta property="og:description" content="Push-varsel når det dukker opp ledige passtimer hos politiet. Last ned gratis." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════════════════ -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="PassVakten hjem">
+        <img src="logo.svg" alt="PassVakten logo" width="36" height="36" />
+        <span class="nav-logo-name">PassVakten</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#slik-fungerer-det">Slik fungerer det</a></li>
+        <li><a href="#funksjoner">Funksjoner</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#last-ned" class="btn-nav">Last ned</a></li>
+      </ul>
+
+      <button class="nav-hamburger" aria-label="Åpne meny" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="hero section" aria-label="Introduksjon">
+      <div class="container hero-inner">
+
+        <!-- Left: copy -->
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-dot"></span>
+            Gratis iOS-app
+          </div>
+          <h1>Få time til pass&nbsp;–<br/>uten&nbsp;å&nbsp;<span class="highlight">slite.</span></h1>
+          <p class="hero-sub">
+            PassVakten overvåker ledige timer hos politiet og varsler deg
+            øyeblikkelig når noe dukker opp.
+          </p>
+          <div class="hero-actions">
+            <a href="#last-ned" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M8 12l4 4 4-4M12 8v8"/></svg>
+              Last ned gratis
+            </a>
+            <a href="#slik-fungerer-det" class="btn btn-ghost">Slik fungerer det</a>
+          </div>
+          <div class="hero-trust">
+            <span class="hero-trust-stars">★★★★★</span>
+            <span>Ingen konto nødvendig &nbsp;·&nbsp; Norges politistasjoner</span>
+          </div>
+        </div>
+
+        <!-- Right: notification mock card -->
+        <div class="hero-visual">
+          <div class="hero-phone-bg">
+            <article class="notif-card" aria-label="Eksempel på push-varsel">
+              <!-- Green live dot with pulse rings -->
+              <div class="notif-pulse-ring" aria-hidden="true"></div>
+              <div class="notif-green-dot" aria-hidden="true"></div>
+
+              <!-- App icon -->
+              <div class="notif-icon-wrap" aria-hidden="true">🔔</div>
+
+              <!-- Text -->
+              <div class="notif-body">
+                <div class="notif-app-name">PassVakten</div>
+                <div class="notif-title">Ledig time funnet!</div>
+                <div class="notif-desc">Grünerløkka politistasjon&nbsp;· I dag kl.&nbsp;14:30</div>
+                <div class="notif-time">Nå</div>
+              </div>
+            </article>
+
+            <!-- Floating confirmation badge -->
+            <div class="notif-badge" aria-hidden="true">✓ Time tilgjengelig</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIK FUNGERER DET
+    ═══════════════════════════════════════════════════════ -->
+    <section class="how section" id="slik-fungerer-det" aria-labelledby="how-title">
+      <div class="container">
+        <div style="text-align:center; margin-bottom: 4px;">
+          <span class="section-label">Slik fungerer det</span>
+        </div>
+        <h2 class="section-title" id="how-title" style="text-align:center; margin: 0 auto 12px;">
+          Tre enkle steg til ledig time
+        </h2>
+        <p class="section-sub" style="text-align:center; margin: 0 auto;">
+          PassVakten gjør jobben for deg, slik at du slipper å sitte og vente foran skjermen.
+        </p>
+
+        <div class="how-grid">
+
+          <div class="step-card">
+            <span class="step-icon" aria-hidden="true">🗺️</span>
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Velg politistasjon</h3>
+            <p>Velg hvilken stasjon eller hvilke stasjoner du vil overvåke.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-icon" aria-hidden="true">👁️</span>
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>PassVakten holder øye</h3>
+            <p>Appen sjekker automatisk etter ledige timer, hele døgnet.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-icon" aria-hidden="true">🔔</span>
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Du får varsel</h3>
+            <p>Så snart en time dukker opp, får du push-varsel direkte på telefonen.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         FUNKSJONER
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" id="funksjoner" aria-labelledby="features-title">
+      <div class="container">
+        <span class="section-label">Funksjoner</span>
+        <h2 class="section-title" id="features-title">Alt du trenger, ingenting du ikke trenger</h2>
+        <p class="section-sub">
+          PassVakten er enkel og effektiv. Ingen unødvendige funksjoner – bare varsler som fungerer.
+        </p>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔔</span>
+            <h3>Øyeblikkelige varsler</h3>
+            <p>Push-varsel sendes sekunder etter at en ledig time dukker opp.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🗺️</span>
+            <h3>Alle stasjoner</h3>
+            <p>Velg én eller flere av politiets passtasjoner i Norge.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">⚡</span>
+            <h3>Alltid oppdatert</h3>
+            <p>PassVakten sjekker kontinuerlig, også når du ikke er i appen.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🎯</span>
+            <h3>Ingen manuell jobbing</h3>
+            <p>Slipp å sitte og refreshe politiets nettsider selv.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📅</span>
+            <h3>Se ledige tider</h3>
+            <p>Få full oversikt over tilgjengelige timer rett i appen.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔒</span>
+            <h3>Ingen konto nødvendig</h3>
+            <p>Last ned og kom i gang med én gang. Ingen registrering.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════════════════════ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div style="text-align:center; margin-bottom: 4px;">
+          <span class="section-label">FAQ</span>
+        </div>
+        <h2 class="section-title" id="faq-title" style="text-align:center; margin: 0 auto 12px;">
+          Ofte stilte spørsmål
+        </h2>
+        <p class="section-sub" style="text-align:center; margin: 0 auto;">
+          Finner du ikke svaret du leter etter? Send oss en e-post på
+          <a href="mailto:kontakt@flatline.no" style="color: var(--coral); font-weight:600;">kontakt@flatline.no</a>.
+        </p>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Hva er PassVakten?
+              <span class="faq-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                PassVakten er en gratis app som varsler deg når det dukker opp ledige passtimer hos politiet.
+                I stedet for å sjekke politiets nettsider manuelt, gjør appen det for deg automatisk.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Er appen gratis?
+              <span class="faq-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Ja, PassVakten er gratis å laste ned og bruke.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Hvilke stasjoner støttes?
+              <span class="faq-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                PassVakten støtter politiets passtasjoner i hele Norge.
+                Du kan velge én eller flere stasjoner du vil overvåke.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Hvordan varsles jeg?
+              <span class="faq-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Du får push-varsel på telefonen din så snart en ledig time dukker opp på en av
+                stasjonene du overvåker.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Er PassVakten offisiell?
+              <span class="faq-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Nei, PassVakten er ikke laget av politiet. Det er en uavhengig app som bruker
+                offentlig tilgjengelig informasjon fra politiets nettsider.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         DOWNLOAD CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="cta section" id="last-ned" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-tag">Gratis nedlasting</div>
+        <h2 id="cta-title">Klar til å finne time?</h2>
+        <p class="cta-sub">Last ned PassVakten gratis i dag.</p>
+
+        <a href="#" class="appstore-btn" aria-label="Last ned PassVakten på App Store">
+          <!-- Apple logo SVG -->
+          <svg class="appstore-icon" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <div class="appstore-text">
+            <small>Last ned på</small>
+            <strong>App Store</strong>
+          </div>
+        </a>
+
+        <p class="cta-note">Krever iOS 16 eller nyere &nbsp;·&nbsp; Gratis &nbsp;·&nbsp; Ingen konto</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>PassVakten</strong><br/>
+        © 2025 PassVakten &nbsp;·&nbsp; En app fra Flatline AS<br/>
+        <span style="font-size:.75rem; color: rgba(255,255,255,.4);">
+          Bygget: <span class="build-stamp" style="color: #aaa; font-family: monospace;">2026-04-23 00:53</span>
+        </span>
+      </div>
+      <div class="footer-right">
+        <a href="personvern.html">Personvern</a>
+        <a href="mailto:kontakt@flatline.no">kontakt@flatline.no</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
